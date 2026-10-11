@@ -8,6 +8,14 @@ Alle vesentlige endringer i Wenche dokumenteres her. Formatet bygger på
 
 ### Rettet
 
+- **Næringsspesifikasjonen sendte sekkepostene på spesifikke grupperingskoder.** Andre
+  driftskostnader ble sendt som 6700 (regnskapstjenester), andre finansinntekter som 8050
+  (annen renteinntekt), andre finanskostnader som 8160 (tap ved kursendring på valuta) og
+  kortsiktige fordringer som 1500 (kundefordringer). Beløpene havnet dermed på en post som
+  beskriver noe mer spesifikt enn det de er. Skatteetatens kodeliste for
+  næringsspesifikasjonen har egne restkoder for disse, og Wenche sender nå 7700 (andre
+  kostnader), 8079 (andre finansinntekter), 8179 (andre finanskostnader) og 1570 (andre
+  kortsiktige krav/fordringer). Summene og avstemmingen er uendret.
 - **SAF-T-importen leste kontanter og skattetrekk inn i feil linje.** Kontanter (1900) havnet
   i kortsiktige fordringer, mens linjen i årsregnskapet er bankinnskudd, kontanter o.l.
   Skattetrekk og andre trekk (2600) havnet i annen kortsiktig gjeld og ble sendt som 2990,

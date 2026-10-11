@@ -133,7 +133,7 @@ _UKLASSIFISERTE_POSTER = (
         "finansielle omløpsmidler (aksjer, fond, obligasjoner og andre finansielle "
         "instrumenter)",
         "Kortsiktige fordringer",
-        "«kortsiktige fordringer» (kode 1500)",
+        "«kortsiktige fordringer» (kode 1570)",
     ),
     (
         frozenset({"2120"}),

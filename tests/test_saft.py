@@ -423,7 +423,7 @@ def test_finansielle_omloepsmidler_gir_advarsel(kode):
     advarsel = cfg["_advarsler"][0]
     assert kode in advarsel
     assert "60,000" in advarsel
-    assert "1500" in advarsel
+    assert "1570" in advarsel
 
 
 def test_kortsiktige_fordringer_gir_ingen_advarsel():

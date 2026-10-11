@@ -4,7 +4,14 @@ Alle vesentlige endringer i Wenche dokumenteres her. Formatet bygger på
 [Keep a Changelog](https://keepachangelog.com/no/), og prosjektet følger
 [semantisk versjonering](https://semver.org/lang/no/).
 
-## [Ikke utgitt]
+## [1.6.0] - 2026-10-11
+
+### Lagt til
+
+- **SAF-T-importen leser gevinst (8074) og tap (8174) ved realisasjon av aksjer til de nye
+  feltene**, og advarer om at fritaksmetoden ikke gjelder rentefond og aksjer i lavskatteland
+  utenfor EØS. Importen advarer også om verdiendringer og nedskrivninger på finansielle
+  eiendeler (8080, 8100, 8115), som fortsatt skattlegges fullt i Wenche.
 
 ### Rettet
 
@@ -18,10 +25,6 @@ Alle vesentlige endringer i Wenche dokumenteres her. Formatet bygger på
   bare utbytte, så hele gevinsten er fritatt uansett eierandel. Årsregnskapet til
   Brønnøysund er uendret: beløpene rapporteres der sammen med andre finansinntekter og andre
   finanskostnader, som før. Config uten feltene gir samme resultat som før.
-- **SAF-T-importen leser gevinst (8074) og tap (8174) ved realisasjon av aksjer til de nye
-  feltene**, og advarer om at fritaksmetoden ikke gjelder rentefond og aksjer i lavskatteland
-  utenfor EØS. Importen advarer også om verdiendringer og nedskrivninger på finansielle
-  eiendeler (8080, 8100, 8115), som fortsatt skattlegges fullt i Wenche.
 
 ## [1.5.4] - 2026-10-11
 

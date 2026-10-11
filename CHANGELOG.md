@@ -8,6 +8,25 @@ Alle vesentlige endringer i Wenche dokumenteres her. Formatet bygger på
 
 ### Rettet
 
+- **Næringsspesifikasjonen sendte sekkepostene på spesifikke grupperingskoder.** Andre
+  driftskostnader ble sendt som 6700 (regnskapstjenester), andre finansinntekter som 8050
+  (annen renteinntekt), andre finanskostnader som 8160 (tap ved kursendring på valuta) og
+  kortsiktige fordringer som 1500 (kundefordringer). Beløpene havnet dermed på en post som
+  beskriver noe mer spesifikt enn det de er. Skatteetatens kodeliste for
+  næringsspesifikasjonen har egne restkoder for disse, og Wenche sender nå 7700 (andre
+  kostnader), 8079 (andre finansinntekter), 8179 (andre finanskostnader) og 1570 (andre
+  kortsiktige krav/fordringer). Summene og avstemmingen er uendret.
+- **SAF-T-importen leste kontanter og skattetrekk inn i feil linje.** Kontanter (1900) havnet
+  i kortsiktige fordringer, mens linjen i årsregnskapet er bankinnskudd, kontanter o.l.
+  Skattetrekk og andre trekk (2600) havnet i annen kortsiktig gjeld og ble sendt som 2990,
+  selv om 2600 er koden næringsspesifikasjonen bruker for skyldige offentlige avgifter.
+  Importen leser nå 1900 som bankinnskudd og 2600 som skyldige offentlige avgifter.
+- **SAF-T-importen advarer nå om flere poster uten egen linje.** Aksjer, fond, obligasjoner og
+  andre finansielle instrumenter i omløpsmidlene (1800, 1810, 1830, 1840, 1880, 1895), utsatt
+  skatt (2120) og egne aksjer (2010) har ingen egen linje i Wenche. De havnet i henholdsvis
+  kortsiktige fordringer, andre langsiktige lån og annen egenkapital uten at importen sa fra.
+  Beløpet blir fortsatt liggende der, men importen gir nå samme type advarsel som for
+  investeringer uten egen linje, slik at du kan kontrollere og rette tallene selv.
 - **SAF-T-importen mistet saldo på kontoer den ikke kunne plassere, uten å si fra.** En konto
   med en grupperingskategori importen ikke håndterer (for eksempel varekostnad), eller uten
   grupperingskode, havnet ingen steder, og tallene ble for lave uten advarsel. Importen gjør nå

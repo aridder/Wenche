@@ -4,7 +4,7 @@ Alle vesentlige endringer i Wenche dokumenteres her. Formatet bygger på
 [Keep a Changelog](https://keepachangelog.com/no/), og prosjektet følger
 [semantisk versjonering](https://semver.org/lang/no/).
 
-## [Ikke utgitt]
+## [1.5.4] - 2026-10-11
 
 ### Rettet
 
